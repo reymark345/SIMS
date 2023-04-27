@@ -1,0 +1,1647 @@
+[
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 1,
+        "fields" : {
+            "code" : "20-001-03-00016",
+            "acronym" : "DSWD FOCAR",
+            "description" : "DSWD Field Office Caraga", 
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 2,
+        "fields" : {
+            "code" : "20-001-03-00016-01",
+            "acronym" : "ORD",
+            "description" : "Office of the Regional Director", 
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 3,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01",
+            "acronym" : "ARDO",
+            "description" : "Office of the Assistant Regional Director for Operation", 
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 4,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01",
+            "acronym" : "PROTECTIVE",
+            "description" : "Protective Services Division", 
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 5,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-01",
+            "acronym" : "CBU",
+            "description" : "Capacity Building Unit", 
+            "is_active" : 1
+        }
+    },
+    
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 6,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-02",
+            "acronym" : "CBS",
+            "description" : "Center Based Services", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 7,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-02-01",
+            "acronym" : "RRCY",
+            "description" : "Regional Rehabilitation Center for Youth", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 8,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-02-02",
+            "acronym" : "HFG",
+            "description" : "Home for Girls", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 9,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-02-03",
+            "acronym" : "CRCF",
+            "description" : "Centers and Residential Care Facilities", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 10,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-03",
+            "acronym" : "CIU",
+            "description" : "Crisis Intervention Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 11,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04",
+            "acronym" : "COMBASED",
+            "description" : "Community Based Services", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 12,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-01",
+            "acronym" : "SFP",
+            "description" : "Supplemental Feeding Program", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 13,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-02",
+            "acronym" : "SOCPEN",
+            "description" : "Social Pension", 
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 14,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-03",
+            "acronym" : "ARRS",
+            "description" : "Adoption Referral and Resource Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 15,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-04",
+            "acronym" : "MTA",
+            "description" : "Minors Traveling Abroad", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 16,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-05",
+            "acronym" : "RPTP",
+            "description" : "Poverty and Reigntegration Program for Trafficked Persons", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 17,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-06",
+            "acronym" : "PWD/OP",
+            "description" : "Persons with Disability / Older Persons", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 18,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-01-04-07",
+            "acronym" : "CNT",
+            "description" : "Centenarians", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 19,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02",
+            "acronym" : "PROMOTIVE",
+            "description" : "Promotive Services Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 20,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02-01",
+            "acronym" : "SLP",
+            "description" : "Sustainable Livelihood Program", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 21,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02-02",
+            "acronym" : "KALAHI",
+            "description" : "KALAHI-CIDSS", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 22,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02-03",
+            "acronym" : "4Ps",
+            "description" : "Pantawid Pamilyang Pilipino Program", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 23,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02-04",
+            "acronym" : "CONV",
+            "description" : "Convergence Strategy Program", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 24,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-02-05",
+            "acronym" : "QLTY",
+            "description" : "Quality Assurance ", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 25,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03",
+            "acronym" : "DRD",
+            "description" : "Disaster Response Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 26,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-01",
+            "acronym" : "DRR",
+            "description" : "Disaster Response and Rehabilitation", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 27,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-02",
+            "acronym" : "DRIM",
+            "description" : "Disaster Response Information Management", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 28,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-03",
+            "acronym" : "RRO",
+            "description" : "Regional Resource Operations", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 29,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-04",
+            "acronym" : "QRF",
+            "description" : "Quick Response Fund", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 30,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-05",
+            "acronym" : "DNU",
+            "description" : "Donation Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 31,
+        "fields" : {
+            "code" : "20-001-03-00016-01-01-03-06",
+            "acronym" : "WRU",
+            "description" : "Warehouse Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 32,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02",
+            "acronym" : "ARDA",
+            "description" : "Office of the Assistant Regional Director for Administration", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 33,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-01",
+            "acronym" : "FMD",
+            "description" : "Financial Management Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 34,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-01-01",
+            "acronym" : "ACS",
+            "description" : "Accounting Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 35,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-01-02",
+            "acronym" : "BDS",
+            "description" : "Budget Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 36,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-01-03",
+            "acronym" : "CAS",
+            "description" : "Cash Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 37,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-02",
+            "acronym" : "AD",
+            "description" : "Administrative Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 38,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-02-01",
+            "acronym" : "GSS",
+            "description" : "General Service Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 39,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-02-02",
+            "acronym" : "PSS",
+            "description" : "Property and Supply Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 40,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-02-03",
+            "acronym" : "PRS",
+            "description" : "Procurement Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 41,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-02-04",
+            "acronym" : "RES",
+            "description" : "Records Management Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 42,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-03",
+            "acronym" : "HRDD",
+            "description" : "Human Resource Development Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 43,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-03-01",
+            "acronym" : "PAS",
+            "description" : "Personnel Administrative Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 44,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-03-02",
+            "acronym" : "LAD",
+            "description" : "Learning and Development", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 45,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-03-03",
+            "acronym" : "HRPPMS",
+            "description" : "Human Resource Planning and Performance Management Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 46,
+        "fields" : {
+            "code" : "20-001-03-00016-01-02-03-04",
+            "acronym" : "HRWS",
+            "description" : "Human Resource Welfare Section", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 47,
+        "fields" : {
+            "code" : "20-001-03-00016-01-03",
+            "acronym" : "SOCTECH",
+            "description" : "Social Technology Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 48,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04",
+            "acronym" : "PPD",
+            "description" : "Policy and Plans Division", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 49,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04-01",
+            "acronym" : "PDPU",
+            "description" : "Policy Development and Planning Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 50,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04-02",
+            "acronym" : "ICTMU",
+            "description" : "Information and Communication Technology Management Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 51,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04-03",
+            "acronym" : "NHTU",
+            "description" : "National Household Targeting Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 52,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04-04",
+            "acronym" : "SU",
+            "description" : "Standards Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 53,
+        "fields" : {
+            "code" : "20-001-03-00016-01-04-05",
+            "acronym" : "UCT",
+            "description" : "Unconditional Cash Transfer", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 54,
+        "fields" : {
+            "code" : "20-001-03-00016-01-05",
+            "acronym" : "IAU",
+            "description" : "Internal Audit Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 55,
+        "fields" : {
+            "code" : "20-001-03-00016-01-06",
+            "acronym" : "SMU",
+            "description" : "Social Marketing Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 56,
+        "fields" : {
+            "code" : "20-001-03-00016-01-07",
+            "acronym" : "LU",
+            "description" : "Legal Unit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 57,
+        "fields" : {
+            "code" : "20-001-03-00016-01-08",
+            "acronym" : "JJWC",
+            "description" : "Juvenile Justice Welfare Council", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibResponsibilityCenter",
+        "pk" : 58,
+        "fields" : {
+            "code" : "20-001-03-00016-01-15",
+            "acronym" : "CAO",
+            "description" : "Commission on Audit", 
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 1,
+        "fields" : {
+            "name" : "FUND 101",
+            "cluster" : "1",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 2,
+        "fields" : {
+            "name" : "TRUST FUND",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 3,
+        "fields" : {
+            "name" : "RSF",
+            "cluster" : "6",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 4,
+        "fields" : {
+            "name" : "JSDF-CDED",
+            "cluster" : "4",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 5,
+        "fields" : {
+            "name" : "DFAT",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 6,
+        "fields" : {
+            "name" : "RCWC",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 7,
+        "fields" : {
+            "name" : "SWDRP GOP",
+            "cluster" : "1",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 8,
+        "fields" : {
+            "name" : "SWDRP LP",
+            "cluster" : "1",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 9,
+        "fields" : {
+            "name" : "PSF",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 10,
+        "fields" : {
+            "name" : "PODER",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 11,
+        "fields" : {
+            "name" : "COPIPAG V",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 12,
+        "fields" : {
+            "name" : "AUS AID",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 13,
+        "fields" : {
+            "name" : "UNICEF",
+            "cluster" : "7",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 14,
+        "fields" : {
+            "name" : "KC GOP",
+            "cluster" : "2",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 15,
+        "fields" : {
+            "name" : "KC ADB",
+            "cluster" : "2",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 16,
+        "fields" : {
+            "name" : "KC WB",
+            "cluster" : "2",
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 17,
+        "fields" : {
+            "name" : "KC LP",
+            "cluster" : "2",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 18,
+        "fields" : {
+            "name" : "F151",
+            "cluster" : "3",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 19,
+        "fields" : {
+            "name" : "F170",
+            "cluster" : "3",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 20,
+        "fields" : {
+            "name" : "KC ADB - Enterprise",
+            "cluster" : "4",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibFundSource",
+        "pk" : 21,
+        "fields" : {
+            "name" : "FUND 171",
+            "cluster" : "4",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUacs",
+        "pk" : 1,
+        "fields" : {
+            "code" : "1040401000",
+            "description" : "Office Supplies Inventory",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUacs",
+        "pk" : 2,
+        "fields" : {
+            "code" : "1040405000",
+            "description" : "Food Supplies Inventory",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUacs",
+        "pk" : 3,
+        "fields" : {
+            "code" : "1040499000",
+            "description" : "Other Supplies and Materials Inventory",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUacs",
+        "pk" : 4,
+        "fields" : {
+            "code" : "1040202000",
+            "description" : "Welfare Goods for Distribution",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 1,
+        "fields" : {
+            "name" : "REAM/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 2,
+        "fields" : {
+            "name" : "BOX",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 3,
+        "fields" : {
+            "name" : "UNIT",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 4,
+        "fields" : {
+            "name" : "PAX",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 5,
+        "fields" : {
+            "name" : "DOZEN",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 6,
+        "fields" : {
+            "name" : "SET",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 7,
+        "fields" : {
+            "name" : "LITER",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 8,
+        "fields" : {
+            "name" : "ROLL/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 9,
+        "fields" : {
+            "name" : "BTL / S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 10,
+        "fields" : {
+            "name" : "LOT",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 11,
+        "fields" : {
+            "name" : "BUNDLE/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 12,
+        "fields" : {
+            "name" : "PACK/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 13,
+        "fields" : {
+            "name" : "GALLON",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 14,
+        "fields" : {
+            "name" : "SACK/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 15,
+        "fields" : {
+            "name" : "LENGTH",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 16,
+        "fields" : {
+            "name" : "BOTTLE/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 17,
+        "fields" : {
+            "name" : "M",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 18,
+        "fields" : {
+            "name" : "CM",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 19,
+        "fields" : {
+            "name" : "MOS.",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 20,
+        "fields" : {
+            "name" : "QRT/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 21,
+        "fields" : {
+            "name" : "PAD/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 22,
+        "fields" : {
+            "name" : "KG/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 23,
+        "fields" : {
+            "name" : "CANNED",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 24,
+        "fields" : {
+            "name" : "BDFT",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 25,
+        "fields" : {
+            "name" : "pairs",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 26,
+        "fields" : {
+            "name" : "cont",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 27,
+        "fields" : {
+            "name" : "PAIRS",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 28,
+        "fields" : {
+            "name" : "CONT.",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 29,
+        "fields" : {
+            "name" : "VIALS",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 30,
+        "fields" : {
+            "name" : "TRAY",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 31,
+        "fields" : {
+            "name" : "BAG",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 32,
+        "fields" : {
+            "name" : "BA",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 33,
+        "fields" : {
+            "name" : "GRAMS",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 34,
+        "fields" : {
+            "name" : "ROOM/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 35,
+        "fields" : {
+            "name" : "SQ.M",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 36,
+        "fields" : {
+            "name" : "CU.M.",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 37,
+        "fields" : {
+            "name" : "LOAD/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 38,
+        "fields" : {
+            "name" : "xyxy",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 39,
+        "fields" : {
+            "name" : "uni",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 40,
+        "fields" : {
+            "name" : "dc",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 41,
+        "fields" : {
+            "name" : "Copy",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 42,
+        "fields" : {
+            "name" : "can",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 43,
+        "fields" : {
+            "name" : "pack",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 44,
+        "fields" : {
+            "name" : "meter/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 45,
+        "fields" : {
+            "name" : "set/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 46,
+        "fields" : {
+            "name" : "case/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 47,
+        "fields" : {
+            "name" : "SET/S",
+            "is_active" : 1
+        }
+    },
+    {
+        "model" : "main.LibUnits",
+        "pk" : 48,
+        "fields" : {
+            "name" : "CASE/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 49,
+        "fields" : {
+            "name" : "POUCH",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 50,
+        "fields" : {
+            "name" : "CAN/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 51,
+        "fields" : {
+            "name" : "UNIT/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 52,
+        "fields" : {
+            "name" : "PAIR/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 53,
+        "fields" : {
+            "name" : "METER/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 54,
+        "fields" : {
+            "name" : "KL/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 55,
+        "fields" : {
+            "name" : "Kg",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 56,
+        "fields" : {
+            "name" : "DAY/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 57,
+        "fields" : {
+            "name" : "HEAD/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 58,
+        "fields" : {
+            "name" : "SHEET/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 59,
+        "fields" : {
+            "name" : "CAN",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 60,
+        "fields" : {
+            "name" : "POST/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 61,
+        "fields" : {
+            "name" : "TANK/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 62,
+        "fields" : {
+            "name" : "Man - Months",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 63,
+        "fields" : {
+            "name" : "van",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 64,
+        "fields" : {
+            "name" : "pairs",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 65,
+        "fields" : {
+            "name" : "Package",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 66,
+        "fields" : {
+            "name" : "Bot",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 67,
+        "fields" : {
+            "name" : "Serving",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 68,
+        "fields" : {
+            "name" : "Jar/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 69,
+        "fields" : {
+            "name" : "Bag/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 70,
+        "fields" : {
+            "name" : "Job",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 71,
+        "fields" : {
+            "name" : "cart",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 72,
+        "fields" : {
+            "name" : "Trip/s",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 73,
+        "fields" : {
+            "name" : "FT.",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 74,
+        "fields" : {
+            "name" : "Lin.M.",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 75,
+        "fields" : {
+            "name" : "Episode",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 76,
+        "fields" : {
+            "name" : "SACHET",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 77,
+        "fields" : {
+            "name" : "TIN",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 78,
+        "fields" : {
+            "name" : "HOUR",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 79,
+        "fields" : {
+            "name" : "PAIL",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 80,
+        "fields" : {
+            "name" : "KM",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 81,
+        "fields" : {
+            "name" : "SQ.Ft",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 82,
+        "fields" : {
+            "name" : "TUBE",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 83,
+        "fields" : {
+            "name" : "YEAR/S",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 84,
+        "fields" : {
+            "name" : "LUMP SUM",
+            "is_active" : 1
+        }
+    },
+
+    {
+        "model" : "main.LibUnits",
+        "pk" : 85,
+        "fields" : {
+            "name" : "ASSEMBLY",
+            "is_active" : 1
+        }
+    }
+]
