@@ -169,31 +169,39 @@ def units(request):
 @csrf_exempt
 def addunits(request):
     if request.method == 'POST':
-        generic_name = request.POST.get('companyname')
-        code_name = request.POST.get('code')
-        address_ = request.POST.get('address')
-        remarks = request.POST.get('remarks')
+        units_name = request.POST.get('unitsname')
+        status = request.POST.get('is_active')
+
         
-        if LibUnits.objects.filter(name=generic_name):
+        if LibUnits.objects.filter(name=units_name):
             return JsonResponse({'data': 'error'})
         else:
             add = LibUnits(
-                name= generic_name, code = code_name, address = address_, remarks = remarks)
+                name= units_name, is_active = status)
             add.save()
         return JsonResponse({'data': 'success'})
         
 @csrf_exempt
 def updateunits(request):
     if request.method == 'POST':
-        company_id = request.POST.get('company_id')
-        company_name = request.POST.get('companyname')
+        company_id = request.POST.get('units_id')
+        company_name = request.POST.get('unitsname')
         status = request.POST.get('is_active')
-        code_name = request.POST.get('code')
-        address_ = request.POST.get('address')
-        remarks = request.POST.get('remarks')
 
         if LibUnits.objects.filter(name=company_name).exclude(id=company_id):
             return JsonResponse({'data': 'error'})
         else:
-            LibUnits.objects.filter(id=company_id).update(name=company_name, is_active=status,code = code_name, address = address_, remarks = remarks)
+            LibUnits.objects.filter(id=company_id).update(name=company_name, is_active=status)
             return JsonResponse({'data': 'success'})
+        
+
+@csrf_exempt
+def unitdetails(request):
+    unit_id = request.POST.get('units')
+    qs_list = list(
+         (LibUnits.objects
+             .filter(id=unit_id)
+             .values('name','is_active')
+         )
+    )
+    return JsonResponse({'data': qs_list})

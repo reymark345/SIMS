@@ -22,5 +22,6 @@ urlpatterns = [
         path('units', views.units, name='units'),
         path('addunits', views.addunits, name='add-units'),
         path('updateunits', views.updateunits, name='update-units'),
+        path('unitdetails', views.unitdetails, name='unit-details'),
 
 ]
