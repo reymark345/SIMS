@@ -14,10 +14,12 @@ urlpatterns = [
         path('fundsource', views.fundsource, name='fund-source'),
         path('addfundsource', views.addfundsource, name='add-fund-source'),
         path('updatefundsource', views.updatefundsource, name='update-fund-source'),
+        path('fundsourcedetails', views.fundsourcedetails, name='fund-source-details'),
 
         path('uacs', views.uacs, name='uacs'),
         path('adduacs', views.adduacs, name='add-uacs'),
         path('updateuacs', views.updateuacs, name='update-uacs'),
+        path('uacsdetails', views.uacsdetails, name='uacs-details'),
 
         path('units', views.units, name='units'),
         path('addunits', views.addunits, name='add-units'),

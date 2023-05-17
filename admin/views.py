@@ -143,6 +143,18 @@ def updatefundsource(request):
          return JsonResponse({'data': 'success'})
     
 
+@csrf_exempt
+def fundsourcedetails(request):
+    fs_id = request.POST.get('fund_source')
+    qs_list = list(
+         (LibFundSource.objects
+             .filter(id=fs_id)
+             .values('name','cluster','is_active')
+         )
+    )
+    return JsonResponse({'data': qs_list})
+    
+
 def uacs(request):
     context = {
 		'uacs' : LibUacs.objects.filter().order_by('created_at')
@@ -152,12 +164,43 @@ def uacs(request):
 @csrf_exempt
 def adduacs(request):
     if request.method == 'POST':
-         return JsonResponse({'data': 'success'})
+        uacs_code = request.POST.get('uacscode')
+        uacs_description = request.POST.get('uacsdescription')
+        status = request.POST.get('is_active')
+
+        if LibUacs.objects.filter(code=uacs_code):
+            return JsonResponse({'data': 'error'})
+        else:
+            add = LibUacs(
+                code= uacs_code,description=uacs_description, is_active = status)
+            add.save()
+        return JsonResponse({'data': 'success'})
         
 @csrf_exempt
 def updateuacs(request):
     if request.method == 'POST':
-         return JsonResponse({'data': 'success'})
+        uacs_id = request.POST.get('uacs_id')
+        uacs_code = request.POST.get('uacscode')
+        uacs_description = request.POST.get('uacsdescription')
+        status = request.POST.get('is_active')
+
+        if LibUacs.objects.filter(code=uacs_code).exclude(id=uacs_id):
+            return JsonResponse({'data': 'error'})
+        else:
+            LibUacs.objects.filter(id=uacs_id).update(code=uacs_code,description = uacs_description, is_active=status)
+            return JsonResponse({'data': 'success'})
+    
+
+@csrf_exempt
+def uacsdetails(request):
+    uacs_id = request.POST.get('uacs')
+    qs_list = list(
+         (LibUacs.objects
+             .filter(id=uacs_id)
+             .values('code','description','is_active')
+         )
+    )
+    return JsonResponse({'data': qs_list})
     
 
 def units(request):
@@ -205,3 +248,5 @@ def unitdetails(request):
          )
     )
     return JsonResponse({'data': qs_list})
+
+

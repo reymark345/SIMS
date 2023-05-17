@@ -19,12 +19,14 @@
       if (toastAnimation) {
         toastDispose(toastAnimation);
       }
+      $(window).ready(()=>{
       selectedType = document.querySelector('#selectType').value;
       selectedAnimation = document.querySelector('#selectAnimation').value;
       toastAnimationExample.classList.add(selectedAnimation);
       toastAnimationExample.querySelector('.ti').classList.add(selectedType);
       toastAnimation = new bootstrap.Toast(toastAnimationExample);
       toastAnimation.show();
+    });
     };
   }
 
