@@ -134,26 +134,26 @@
                             <span class="menu-header-text">Inventory</span>
                         </li>
 
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">
+                        <li class="menu-item {% if url_name == 'inventory-po' %}active{% endif %}">
+                            <a href="{% url 'inventory-po' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
                                 <div data-i18n="PO">PO</div>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="app-email.html" class="menu-link">
+                        <li class="menu-item {% if url_name == 'inventory-ris' %}active{% endif %}">
+                            <a href="{% url 'inventory-ris' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-checkbox"></i>
                                 <div data-i18n="RIS">RIS</div>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">
+                        <li class="menu-item {% if url_name == 'inventory-transaction' %}active{% endif %}">
+                            <a href="{% url 'inventory-transaction' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-layout-grid"></i>
                                 <div data-i18n="Transaction">Transaction</div>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="app-email.html" class="menu-link">
+                        <li class="menu-item {% if url_name == 'inventory-summary' %}active{% endif %}">
+                            <a href="{% url 'inventory-summary' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-file-description"></i>
                                 <div data-i18n="Summary">Summary</div>
                             </a>
@@ -163,14 +163,14 @@
                         <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Reports</span>
                         </li>
-                        <li class="menu-item">
-                            <a href="app-email.html" class="menu-link">
+                        <li class="menu-item {% if url_name == 'reports-rsmi' %}active{% endif %}">
+                            <a href="{% url 'reports-rsmi' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                                 <div data-i18n="RSMI">RSMI</div>
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="app-email.html" class="menu-link">
+                        <li class="menu-item {% if url_name == 'reports-ledger' %}active{% endif %}">
+                            <a href="{% url 'reports-ledger' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-layout-grid"></i>
                                 <div data-i18n="Ledger">Ledger</div>
                             </a>
@@ -180,8 +180,8 @@
                         <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Configuration</span>
                         </li>
-                        <li class="menu-item">
-                            <a href="app-email.html" class="menu-link">
+                        <li class="menu-item {% if url_name == 'configuration-beginning-balances' %}active{% endif %}">
+                            <a href="{% url 'configuration-beginning-balances' %}" class="menu-link">
                                 <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
                                 <div data-i18n="Beginning Balances">Beginning balances</div>
                             </a>
