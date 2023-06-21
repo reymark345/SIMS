@@ -10,6 +10,7 @@ urlpatterns = [
         path('responsibilitycenter', views.responsibilitycenter, name='responsibility-center'),
         path('addresponsibilitycenter', views.addresponsibilitycenter, name='add-responsibility-center'),
         path('updateresponsibilitycenter', views.updateresponsibilitycenter, name='update-responsibility-center'),
+        path('responsibilitycenterdetails', views.responsibilitycenterdetails, name='responsibility-center-details'),
         
         path('fundsource', views.fundsource, name='fund-source'),
         path('addfundsource', views.addfundsource, name='add-fund-source'),
