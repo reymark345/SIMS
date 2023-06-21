@@ -88,42 +88,51 @@ def responsibilitycenter(request):
     return render(request, 'admin/responsibility_center.html', context)
 
 
+        
 @csrf_exempt
 def addresponsibilitycenter(request):
     if request.method == 'POST':
-        # check_generic = False
-        # generic_name = request.POST.get('companyname')
-        # code_name = request.POST.get('code')
-        # address_ = request.POST.get('address')
-        # remarks = request.POST.get('remarks')
-        # if Company.objects.filter(name=generic_name):
-        #     return JsonResponse({'data': 'error'})
-        # else:
-        #     check_generic = True        
-        # if check_generic:
-        #     add = Company(
-        #         name= generic_name, code = code_name, address = address_, remarks = remarks)
-        #     add.save()
-            return JsonResponse({'data': 'success'})
+        rc_code = request.POST.get('rc_code')
+        rc_acronym = request.POST.get('rc_acronym')
+        rc_description = request.POST.get('rc_description')
+        status = request.POST.get('is_active')
         
+        if LibResponsibilityCenter.objects.filter(code=rc_code):
+            return JsonResponse({'data': 'error'})
+        else:
+            add = LibResponsibilityCenter(
+                code= rc_code,acronym = rc_acronym, description = rc_description,is_active = status)
+            add.save()
+        return JsonResponse({'data': 'success'})
+    
+    
 @csrf_exempt
 def updateresponsibilitycenter(request):
-    # if request.method == 'POST':
-    #     company_id = request.POST.get('company_id')
-    #     company_name = request.POST.get('companyname')
-    #     status = request.POST.get('is_active')
-    #     code_name = request.POST.get('code')
-    #     address_ = request.POST.get('address')
-    #     remarks = request.POST.get('remarks')
-
-    #     check_company = False
-    #     if Company.objects.filter(name=company_name).exclude(id=company_id):
-    #         return JsonResponse({'data': 'error'})
-    #     else:
-    #         check_company = True        
-    #     if check_company:
-    #         Company.objects.filter(id=company_id).update(name=company_name, is_active=status,code = code_name, address = address_, remarks = remarks)
+    if request.method == 'POST':
+        rc_id = request.POST.get('rc_id')
+        rc_code = request.POST.get('rc_code')
+        rc_acronym = request.POST.get('rc_acronym')
+        rc_description = request.POST.get('rc_description')
+        status = request.POST.get('is_active')
+    
+        if LibResponsibilityCenter.objects.filter(code=rc_code).exclude(id=rc_id):
+            return JsonResponse({'data': 'error'})
+        else:
+            LibResponsibilityCenter.objects.filter(id=rc_id).update(code=rc_code,acronym =rc_acronym,description=rc_description,is_active=status)
             return JsonResponse({'data': 'success'})
+        
+
+        
+@csrf_exempt
+def responsibilitycenterdetails(request):
+    rc_id = request.POST.get('responsibility_center_id')
+    qs_list = list(
+         (LibResponsibilityCenter.objects
+             .filter(id=rc_id)
+             .values('code','acronym','description','is_active')
+         )
+    )
+    return JsonResponse({'data': qs_list})
 
 
 def fundsource(request):
@@ -131,16 +140,37 @@ def fundsource(request):
 		'fund_source' : LibFundSource.objects.filter().order_by('name')
 	}
     return render(request, 'admin/fund_source.html', context)
-
+  
+     
 @csrf_exempt
 def addfundsource(request):
     if request.method == 'POST':
-         return JsonResponse({'data': 'success'})
+        fundsource = request.POST.get('fundsource')
+        cluster_name = request.POST.get('cluster')
+        status = request.POST.get('is_active')
+    
+        if LibFundSource.objects.filter(name=fundsource):
+            return JsonResponse({'data': 'error'})
+        else:
+            add = LibFundSource(
+                name= fundsource,cluster = cluster_name, is_active = status)
+            add.save()
+        return JsonResponse({'data': 'success'})
         
+     
 @csrf_exempt
 def updatefundsource(request):
     if request.method == 'POST':
-         return JsonResponse({'data': 'success'})
+        fundsource_id = request.POST.get('fundsource_id')
+        cluster_name = request.POST.get('cluster')
+        fundsource = request.POST.get('fundsource')
+        status = request.POST.get('is_active')
+
+        if LibFundSource.objects.filter(name=fundsource).exclude(id=fundsource_id):
+            return JsonResponse({'data': 'error'})
+        else:
+            LibFundSource.objects.filter(id=fundsource_id).update(name=fundsource,cluster =cluster_name, is_active=status)
+            return JsonResponse({'data': 'success'})
     
 
 @csrf_exempt
@@ -214,8 +244,7 @@ def addunits(request):
     if request.method == 'POST':
         units_name = request.POST.get('unitsname')
         status = request.POST.get('is_active')
-
-        
+    
         if LibUnits.objects.filter(name=units_name):
             return JsonResponse({'data': 'error'})
         else:
@@ -227,20 +256,20 @@ def addunits(request):
 @csrf_exempt
 def updateunits(request):
     if request.method == 'POST':
-        company_id = request.POST.get('units_id')
-        company_name = request.POST.get('unitsname')
+        units_id = request.POST.get('units_id')
+        unit_name = request.POST.get('unitsname')
         status = request.POST.get('is_active')
 
-        if LibUnits.objects.filter(name=company_name).exclude(id=company_id):
+        if LibUnits.objects.filter(name=unit_name).exclude(id=units_id):
             return JsonResponse({'data': 'error'})
         else:
-            LibUnits.objects.filter(id=company_id).update(name=company_name, is_active=status)
+            LibUnits.objects.filter(id=units_id).update(name=unit_name, is_active=status)
             return JsonResponse({'data': 'success'})
         
 
 @csrf_exempt
 def unitdetails(request):
-    unit_id = request.POST.get('units')
+    unit_id = request.POST.get('units_id')
     qs_list = list(
          (LibUnits.objects
              .filter(id=unit_id)

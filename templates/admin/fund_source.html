@@ -50,7 +50,7 @@
       ></button>
     </div>
     <div class="offcanvas-body flex-grow-1">
-      <form class="add-new-record pt-0 row g-2" id="form-add-new-record" action="javascript:;">
+      <form class="add-new-record pt-0 row g-2" id="item-form" action="javascript:;">
 
         <div class="col-sm-12">
           <label class="form-label" for="fundsource">Fund Source</label>
@@ -73,7 +73,7 @@
             <div class="input-group input-group-merge speech-to-text">
               <span id="fundsource2" class="input-group-text"><i class="ti ti-user"></i></span>
               <input
-                type="text"
+                type="number"
                 id="cluster"
                 class="form-control dt-cluster"
                 name="cluster"
@@ -84,7 +84,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 uacs-status">
+        <div class="col-sm-12 fund-source-status">
           <label class="form-label" for="fundsource">Status</label>
           <div class="input-group input-group-merge">
             <span id="fundsource2" class="input-group-text"><i class="ti ti-user"></i></span>
@@ -97,7 +97,7 @@
           </div>
         </div>
                 
-        <div class="col-sm-12 update-div-uacs">
+        <div class="col-sm-12 update-div-fund-source">
           <br>
           <button type="submit" id="add-uacs" class="btn btn-primary data-submit me-sm-3 me-1 additional-record">Submit</button>
           <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
@@ -114,105 +114,125 @@
 <script>
   let id,name,status,identifier_swal,fv,offCanvasEl;
   $(document).ready(function(){
-  
-    $("#form-add-new-record").submit(function (event) {
-          $name = $('#fundsourcename').val();
-          $cluster = $('#cluster').val();
-          $selectvalue = $('#select').find(":selected").val();
-          if(id){request_url = "{% url 'update-fund-source' %}";identifier_swal = "Update";}
-          else{identifier_swal = "Add";request_url = "{% url 'add-fund-source' %}";}
-  
-          if($fundsource != ""){
-            Swal.fire({
-              title: 'Are you sure?',
-              html: identifier_swal+" "+'<strong>'+$name+ " ?"+'</strong>',
-              icon: 'warning',
-              showCancelButton: true,
-              confirmButtonText: 'Yes',
-              customClass: {
-                confirmButton: 'btn btn-primary me-3',
-                cancelButton: 'btn btn-label-secondary'
+
+    $(document).ready(function () {
+
+        const ItemFormValidation = document.getElementById('item-form'),
+        offCanvasElement = document.querySelector('#add-new-record'),
+        newRecord = document.querySelector('.create-new')
+        
+
+    let offCanvasEl = new bootstrap.Offcanvas(offCanvasElement)
+
+
+    newRecord.addEventListener('click', function () {
+
+      $('.title-name').text('Add Record');
+      $('.fund-source-status').hide();
+      $('.update-div-fund-source update-unit').hide();
+      id = "";         
+      identifier_swal = "Add";          
+      offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
+      // Empty fields on offCanvas open
+      (offCanvasElement.querySelector('.dt-fund-source').value = ''),
+      (offCanvasElement.querySelector('.dt-cluster').value = '');
+      // Open offCanvas with form
+      offCanvasEl.show();
+    })
+
+    const offCanvasFV = FormValidation.formValidation(ItemFormValidation, {
+
+        fields: {
+          fundsourcename: {
+                validators: {
+                    notEmpty: {
+                        message: 'Enter Fund Source Name',
+                    },
+                },
+            },
+          cluster: {
+              validators: {
+                  notEmpty: {
+                      message: 'Enter Cluster',
+                  },
               },
-              buttonsStyling: false
-        }).then(function (result) {
-          if (result.value) {
-            var formData = {
-              fundsource: $fundsource,
-              cluster:$cluster,
-              is_active: $selectvalue,
-              uacs_id: id,
-            };
-              $.ajax({
-                  type: "POST",
-                  url: request_url,
-                  data:formData,
-              }).done(function(data){
-                if(data.data == "success"){
-                  Swal.fire({
-                      icon: 'success',
-                      title: 'Successfully save!',
-                      text: $fundsource +' has been saved.',
-                      customClass: {
-                        confirmButton: 'btn btn-success'
-                      }
-                    });
-                      window.location.reload();
+          },
+        },
+        plugins: {
+            trigger: new FormValidation.plugins.Trigger(),
+            bootstrap5: new FormValidation.plugins.Bootstrap5(),
+            submitButton: new FormValidation.plugins.SubmitButton(),
+            autoFocus: new FormValidation.plugins.AutoFocus(),
+        },
+        init: (instance) => {
+            instance.on('plugins.message.placed', function (e) {
+                if (e.element.parentElement.classList.contains('input-group')) {
+                    e.element.parentElement.insertAdjacentElement('afterend', e.messageElement)
                 }
-                else{
-                  Swal.fire({
-                      icon: 'error',
-                      title: 'Invalid uacs Name',
-                      text: $fundsource +' already exist',
-                      customClass: {
-                        confirmButton: 'btn btn-success'
-                      }});
-                    }
-                  });
+            })
+        },
+    }).on('core.form.valid', function () {
+      formRequest();
+    })
+  });
+
+
+  function formRequest(){
+    $fundsourcename = $('#fundsourcename').val();
+    $cluster_name = $('#cluster').val();
+    $selectvalue = $('#select').find(":selected").val();
+    if(id){request_url = "{% url 'update-fund-source' %}";
+    identifier_swal = "Update";}
+    else{identifier_swal = "Add";
+    request_url = "{% url 'add-fund-source' %}";}
+
+    if($fundsourcename != ""){
+      Swal.fire({
+        title: 'Are you sure?',
+        html: identifier_swal+" "+'<strong>'+$fundsourcename+ " ?"+'</strong>',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        customClass: {
+          confirmButton: 'btn btn-primary me-3',
+          cancelButton: 'btn btn-label-secondary'
+        },
+        buttonsStyling: false
+  }).then(function (result) {
+    if (result.value) {
+        $.ajax({
+            type: "POST",
+            url: request_url,
+            data:{
+              fundsource: $fundsourcename, cluster: $cluster_name, is_active : $selectvalue, fundsource_id: id
+            }
+        }).done(function(data){
+          if(data.data == "success"){
+            Swal.fire({
+                icon: 'success',
+                title: 'Successfully save!',
+                text: $fundsourcename +' has been added.',
+                customClass: {
+                  confirmButton: 'btn btn-success'
+                }
+              });
+                window.location.reload();
+          }
+          else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid Unit Code',
+                text: $fundsourcename +' already exist',
+                customClass: {
+                  confirmButton: 'btn btn-success'
                 }});
               }
-              else {
-                const formAddNewRecord = document.getElementById('form-add-new-record');
-                // Form validation for Add new record
-                fv = FormValidation.formValidation(formAddNewRecord, {
-                  fields: {
-                    fundsource: {
-                      validators: {
-                        notEmpty: {
-                          message: 'The code is required'
-                        }
-                      }
-                    },
-                    cluster: {
-                      validators: {
-                        notEmpty: {
-                          message: 'Cluster is required'
-                        }
-                      }
-                    },
-                  },
-                  plugins: {
-                    trigger: new FormValidation.plugins.Trigger(),
-                    bootstrap5: new FormValidation.plugins.Bootstrap5({
-                      // Use this for enabling/changing valid/invalid class
-                      // eleInvalidClass: '',
-                      eleValidClass: '',
-                      rowSelector: '.col-sm-12'
-                    }),
-                    submitButton: new FormValidation.plugins.SubmitButton(),
-                    // defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
-                    autoFocus: new FormValidation.plugins.AutoFocus()
-                  },
-                  init: instance => {
-                    instance.on('plugins.message.placed', function (e) {
-                      if (e.element.parentElement.classList.contains('input-group')) {
-                        e.element.parentElement.insertAdjacentElement('afterend', e.messageElement);
-                      }
-                    });
-                  }
-              }); 
-              }
-          });
-  
+            });
+          }});
+        }
+
+  }
+
       $('.item-edit').click(function (event) {
         $('.fund-source-status').show();
         id = $(this).attr('id');
@@ -299,33 +319,7 @@
   
   
   
-    document.addEventListener('DOMContentLoaded', function (e) {
-      (function () {
-        const formAddNewRecord = document.getElementById('form-add-new-record');
-  
-        setTimeout(() => {
-          const newRecord = document.querySelector('.create-new'),
-            offCanvasElement = document.querySelector('#add-new-record');
-  
-          // To open offCanvas, to add new record
-          if (newRecord) {
-            newRecord.addEventListener('click', function () {
-              $('.title-name').text('Add Record');
-              $('.fund-source-status').hide();
-              $('.update-div-fund-source update-fund-source').hide();
-              id = "";         
-              identifier_swal = "Add";          
-              offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
-              // Empty fields on offCanvas open
-              (offCanvasElement.querySelector('.dt-fund-source').value = '');
-              (offCanvasElement.querySelector('.cluster').value = '');
-              // Open offCanvas with form
-              offCanvasEl.show();
-            });
-          }
-        }, 200);
-      })();
-    });
+
   
   
   //datatables
